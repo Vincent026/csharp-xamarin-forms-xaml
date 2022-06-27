@@ -4,17 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             xmlns:fitnesviews="clr-namespace:XAMLInXamarinForms.Views.Fitness"
-             x:Class="XAMLInXamarinForms.Views.Fitness.FitnessView">
-    <ContentPage>
-        <ContentPage.Padding>
-            <OnPlatform x:TypeArguments="Thickness">
-                <On Platform="iOS, Android" Value="0,40,0,0" />
-            </OnPlatform>
-        </ContentPage.Padding>
-        <StackLayout>
-            <Label Text="Red" FontSize="Medium" HorizontalOptions="Center" />
-            <BoxView Color="Red" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage>
+             x:Class="XAMLInXamarinForms.Views.Fitness.FitnessView"
+             xmlns:fitnesviews="clr-namespace:XAMLInXamarinForms.Views.Fitness">
+    <CarouselPage.Title>Fitness</CarouselPage.Title>
+    <fitnesviews:SundayView/>
+    <fitnesviews:MondayView/>
+    <fitnesviews:TuesdayView/>
+    <fitnesviews:WednesdayView/>
+    <fitnesviews:ThursdayView/>
+    <fitnesviews:FridayView/>
+    <fitnesviews:SaturdayView/>
 </CarouselPage>
