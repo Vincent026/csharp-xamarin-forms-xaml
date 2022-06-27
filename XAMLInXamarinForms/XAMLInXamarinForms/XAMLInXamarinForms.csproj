@@ -19,6 +19,9 @@
     <Compile Update="Views\Nutrition\LunchView.xaml.cs">
       <DependentUpon>LunchView.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\FitnessView.xaml.cs">
+      <DependentUpon>FitnessView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -58,7 +61,7 @@
     <EmbeddedResource Update="Views\Nutrition\SnackView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Page1.xaml">
+    <EmbeddedResource Update="Views\FitnessView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\PrivacyModal.xaml">
